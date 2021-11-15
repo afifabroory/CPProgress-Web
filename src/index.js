@@ -49,7 +49,7 @@ function taskOnLoad() {
     })
   })
 
-  const submissionStatusRef = ref(db, 'submissionStatus')
+  const submissionStatusRef = ref(db, 'submissionStatus/overall')
   onValue(submissionStatusRef, (snapshot) => {
     const statusData = snapshot.val()
     var donutData = {
